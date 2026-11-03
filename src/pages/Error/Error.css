@@ -1,0 +1,21 @@
+/** ============================ start besmillah ================================*/
+.ErrorPage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    text-align: center;
+}
+.ERROR404{
+    font-size: 120px;
+    color: rgb(23, 55, 86);
+}
+.PageNotFound{
+    font-size: 40px;
+    font-weight: 700;
+}
+.PageNotFoundPara{
+    color: gray;
+    margin-top: 2%;
+}
