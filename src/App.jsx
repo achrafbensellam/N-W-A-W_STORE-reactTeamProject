@@ -18,6 +18,7 @@ function App() {
           <Route path='/' element={<HomePage />} />
           <Route path='/About' element={<AboutPage />} />
            <Route path='/Productspage' element={<Productspage/>}/>
+           <Route path='/Productspage/:id' element={ShowDetailes}/>
           <Route path='*' element={<ErrorPage />} />
         </Routes>
         <Productspage/>
