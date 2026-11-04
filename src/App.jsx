@@ -26,19 +26,24 @@ import './App.css';
 
 
 import { MyProvider } from './utils/MyContext';
-
-import Cart from './components/cart';
-// import Checkout from './components/checkout';
+import Productspage from './pages/Products.jsx/ProductsPage';
 
 function App() {
   return (
-    <MyProvider>
-  
-    <Cart />
-      
-    </MyProvider>
+    <>
+      <MyProvider>
+        <HeaderPage />
+        <Routes>
+          <Route path='/' element={<HomePage />} />
+          <Route path='/About' element={<AboutPage />} />
+           <Route path='/Productspage' element={<Productspage/>}/>
+          <Route path='*' element={<ErrorPage />} />
+        </Routes>
+        <Productspage/>
+        <PageFooter />
+      </MyProvider>
+    </>
   );
 }
 
 export default App;
-
