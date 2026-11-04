@@ -94,6 +94,13 @@
 .berguMenu{
     display: none;
 }
+.cart-icon-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: inherit;
+    font-size: inherit;
+}
 @media (min-width:320px) and (max-width:480px) {
     .berguMenu{
     display: block;
