@@ -1,0 +1,78 @@
+.theproductsConta{
+   border-radius: 10px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    gap: 4vh;
+    
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid lightgreen;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: rgb(249, 252, 252);
+    width: 80%;
+    position: relative
+}
+.theimage{
+    width: 100%;
+object-fit: cover;
+}
+.theimagebox{
+    width: 100%;
+    object-fit: cover;
+}
+.thetext{
+    display: flex;
+    flex-direction: column;
+    padding-left: 3%;
+    gap: 2vh;
+
+}
+.FaStar{
+    color: rgb(248, 160, 19);
+}
+.theguy{
+    background-color: lightblue;
+    border-radius: 10px;
+    border: 1px solid yellow;
+    width: 40%;
+    height: 4vh;
+    transition: all 0.3s ease-out;
+}
+.theguy:hover{
+    cursor: pointer;
+    background-color: bisque;
+    transform: scale(1);
+}
+
+/* the btns in the details page */
+.theadd{
+    background-color: lightblue;
+    border: 1px solid yellow;
+    border-radius: 10px;
+    width: 10%;
+    height: 4vh;
+    transition: all 0.3s ease-in-out;
+}
+.theadd:hover{
+    background-color: beige;
+    color: blueviolet;
+    transform: scale(1);
+}
+.backup{
+    background-color: lightblue;
+    border: 1px solid yellow;
+    border-radius: 10px;
+    width: 10%;
+    height: 4vh;
+    transition: all 0.3s ease-in-out;
+}
+.backup:hover{
+    background-color: beige;
+    color: blueviolet;
+    transform: scale(1);
+}
