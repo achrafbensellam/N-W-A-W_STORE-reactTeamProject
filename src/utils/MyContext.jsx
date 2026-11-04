@@ -16,7 +16,8 @@ export const MyProvider = ({ children }) => {
     rating: "4.8",
     availability: "In Stock",
     categoy: "Tops",
-    featured:false
+    featured:false,
+    discount: 2
   },
   { id: crypto.randomUUID(),
     name: "Slim-Fit Stretch Denim Jeans",
@@ -26,7 +27,8 @@ export const MyProvider = ({ children }) => {
     rating: "4.6",
     availability: "In Stock",
     categoy: "Bottoms",
-    featured:true
+    featured:true,
+    discount: 0
   },
   { id: crypto.randomUUID(),
     name: "Minimalist Fleece Pullover Hoodie",
@@ -36,7 +38,8 @@ export const MyProvider = ({ children }) => {
     rating: "4.9",
     availability: "In Stock",
     categoy: "Outerwear",
-    featured:false
+    featured:false,
+    discount: 10
   },
   {
     id:crypto.randomUUID(),
@@ -47,7 +50,8 @@ export const MyProvider = ({ children }) => {
     rating: "4.5",
     availability: "Low Stock",
     categoy: "Tops",
-    featured:false
+    featured:false,
+    discount: 50
   },
   { id: crypto.randomUUID(),
     name: "Utility Relaxed Cargo Pants",
@@ -57,7 +61,8 @@ export const MyProvider = ({ children }) => {
     rating: "4.7",
     availability: "In Stock",
     categoy: "Bottoms",
-    featured:true
+    featured:true,
+    discount: 8
   },
   { id: crypto.randomUUID(),
     name: "Insulated Urban Bomber Jacket",
@@ -67,7 +72,8 @@ export const MyProvider = ({ children }) => {
     rating: "4.9",
     availability: "In Stock",
     categoy: "Outerwear",
-    featured:false
+    featured:false,
+    discount: 50
   },
   { id: crypto.randomUUID(),
     name: "Tailored Smart Wool-Blend Trousers",
@@ -77,7 +83,8 @@ export const MyProvider = ({ children }) => {
     rating: "4.4",
     availability: "Out of Stock",
     categoy: "Bottoms",
-    featured:false
+    featured:false,
+    discount: 0
   },
   { id: crypto.randomUUID(),
     name: "Casual Linen Long-Sleeve Shirt",
@@ -87,7 +94,8 @@ export const MyProvider = ({ children }) => {
     rating: "4.6",
     availability: "In Stock",
     categoy: "Tops",
-    featured:false
+    featured:false,
+    discount: 10
   },
   { id: crypto.randomUUID(),
     name: "Classic Denim Trucker Jacket",
@@ -97,7 +105,8 @@ export const MyProvider = ({ children }) => {
     rating: "4.8",
     availability: "In Stock",
     categoy: "Outerwear",
-    featured:true
+    featured:true,
+    discount: 0
   }
 ]);
 
