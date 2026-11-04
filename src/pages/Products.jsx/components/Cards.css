@@ -1,27 +1,19 @@
 .theproductsConta{
    border-radius: 10px;
-    width: 90%;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     justify-items: center;
     gap: 4vh;
     
 }
-.card{
-    display: flex;
-    flex-direction: column;
-    border: 1px solid lightgreen;
-    border-radius: 10px;
-    overflow: hidden;
-    background-color: rgb(249, 252, 252);
-    width: 80%;
-    position: relative
-}
-.theimage{
+
+.theimage{height: 70vh;
     width: 100%;
-object-fit: cover;
+    object-fit: cover;
 }
 .theimagebox{
+    height: 70vh;
     width: 100%;
     object-fit: cover;
 }
@@ -39,7 +31,7 @@ object-fit: cover;
     background-color: lightblue;
     border-radius: 10px;
     border: 1px solid yellow;
-    width: 40%;
+    width: 95%;
     height: 4vh;
     transition: all 0.3s ease-out;
 }
@@ -54,7 +46,7 @@ object-fit: cover;
     background-color: lightblue;
     border: 1px solid yellow;
     border-radius: 10px;
-    width: 10%;
+    width: 95%;
     height: 4vh;
     transition: all 0.3s ease-in-out;
 }
@@ -67,7 +59,7 @@ object-fit: cover;
     background-color: lightblue;
     border: 1px solid yellow;
     border-radius: 10px;
-    width: 10%;
+    width: 95%;
     height: 4vh;
     transition: all 0.3s ease-in-out;
 }
@@ -75,4 +67,49 @@ object-fit: cover;
     background-color: beige;
     color: blueviolet;
     transform: scale(1);
+}
+
+.thefirstcontainerintheproductspage{
+    background:linear-gradient( to top right, black , green) ;
+   
+
+}
+
+/* the cards */
+.cardofProductspage{
+   display: flex;
+    flex-direction: column;
+    border: 1px solid lightgreen;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: rgb(249, 252, 252);
+    width: 90%;
+    position: relative
+}
+
+
+
+
+/* rthe details style part */
+.theimagedetailsbox{
+    width: 40%;
+    overflow: hidden;
+}
+.theimagedetails{
+    border-radius: 10px;
+
+}
+/* the small images */
+.theboximages{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-around;
+width: 50%;
+height: 20vh;
+}
+.thethreesmall{
+    height: 17vh;
+    width: 30%;
+    border-radius: 10px;
 }
