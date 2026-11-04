@@ -2,9 +2,10 @@ import React from "react";
 
 function Flters() {
     return(
-     <div>
-        <input type="search" />
+     <div className="thefilterbar">
+        <input type="search" className="thesearchbar" />
         <p>enter your category :</p>
+        
         <input type="checkbox" />
         <label htmlFor="">pants</label><br />
 
@@ -12,7 +13,7 @@ function Flters() {
         <label htmlFor="">pants</label><br />
         <input type="checkbox" />
         <label htmlFor="">pants</label><br />
-        
+
         <input type="checkbox" />
         <label htmlFor="">pants</label>
 
