@@ -27,10 +27,10 @@ function PageHeader() {
                     <Link className='headerLinks' to='/Order'>Order</Link>
                 </nav>
                     <FontAwesomeIcon onClick={burgerState} className='berguMenu' icon={faBars}/>
-                <nav className={burger?'NavBar2':'NavBar3'}>
-                    <Link className={burger?'headerLinks2':'headerLinks3'} to='/'>Home</Link>
-                    <Link className={burger?'headerLinks2':'headerLinks3'} to='/Products'>Products</Link>
-                    <Link className={burger?'headerLinks2':'headerLinks3'} to='/Order'>Order</Link>
+                <nav className={burger?'NavBar3':'NavBar2'}>
+                    <Link className={burger?'headerLinks3':'headerLinks2'} to='/'>Home</Link>
+                    <Link className={burger?'headerLinks3':'headerLinks2'} to='/Products'>Products</Link>
+                    <Link className={burger?'headerLinks3':'headerLinks2'} to='/Order'>Order</Link>
                 </nav>
                 <div className='searchCartDiv'>
                     <div>
