@@ -3,7 +3,7 @@ import './Footer.css'
 function PageFooter() {
     return (
         <>
-
+        
         </>
     )
 }
