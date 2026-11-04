@@ -86,7 +86,6 @@ function CartSidebar({ isOpen, onClose }) {
                                                 <p> ${Number(item.price).toFixed(2)} </p>
 
                                                 <div className="sidebar-quantity">
-
                                                     <button type="button" onClick={() => decreaseQuantity(item.id)}>
                                                         -
                                                     </button>
