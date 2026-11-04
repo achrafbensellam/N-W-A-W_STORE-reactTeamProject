@@ -1,6 +1,8 @@
 import React, { useContext , useState } from "react";
 import { MyContext } from "../../../utils/MyContext";
 import '../components/Cards.css';
+import { Link } from 'react-router-dom';
+
 import { FaStar } from "react-icons/fa6";
 import { FaRegStarHalfStroke } from "react-icons/fa6";
 function Showdetails() {
@@ -38,7 +40,7 @@ function Showdetails() {
 
 
 
-                <button className="theguy" > <Link to={`/item/${item.id}`}>view details</Link>  </button>
+                <button className="theguy" > <Link to={`/product/${item.id}`}>view details</Link>  </button>
                 </div>
              
             </div>
