@@ -5,7 +5,7 @@ import { FaStar } from "react-icons/fa6";
 import { FaRegStarHalfStroke } from "react-icons/fa6";
 function Showdetails() {
 
-    const { products, cart, setCart } = useContext(MyContext);
+    const [products, setProducts, cart, setCart] = useContext(MyContext);
 
     const [selectedCard, setSelectedCard] = useState(null);
 
@@ -25,7 +25,7 @@ function Showdetails() {
                                 <h2 >Name : {item.name}</h2>
                                 <div className="FaStar"> <FaStar /><FaStar /><FaStar /><FaRegStarHalfStroke /></div>
                                 <h2>Price : {item.price}</h2>
-                                <h2>category : {item.name}</h2>
+                                <h2>category : {item.category}</h2>
 
 
 
@@ -34,23 +34,22 @@ function Showdetails() {
                                     onClick={() => {
                                         const existingProduct = cart.find(
                                             (product) => product.id === item.id);
-
                                         if (existingProduct) {
                                             setCart((currentCart) =>
                                                 currentCart.map((product) =>
                                                     product.id === item.id
                                                         ? {
                                                             ...product,
-                                                            quantity: product.quantity + 1}
+                                                            quantity: product.quantity + 1
+                                                        }
                                                         : product
                                                 )
                                             );
 
                                         } else {
-
                                             setCart((currentCart) => [
                                                 ...currentCart,
-                                                {...item, quantity: 1 }
+                                                { ...item, quantity: 1 }
                                             ]);
 
                                         }
@@ -61,7 +60,7 @@ function Showdetails() {
 
 
 
-                                <button className="theguy" > <Link to={`/item/${item.id}`}>view details</Link>  </button>
+                                {/* <button className="theguy" > <Link to={`/item/${item.id}`}>view details</Link>  </button> */}
                             </div>
 
                         </div>
