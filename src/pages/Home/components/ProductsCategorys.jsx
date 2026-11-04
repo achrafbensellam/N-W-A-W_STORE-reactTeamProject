@@ -1,17 +1,20 @@
 import { useContext, useState } from 'react';
 import { MyContext } from '../../../utils/MyContext';
-import testPIC from '../../../assets/img/testPIC.png'
+// import testPIC from '../../../assets/img/testPIC.png'
 import './ProductsCategorys.css';
 function ProductsCategorySection() {
     const[products] = useContext(MyContext)
     console.log(products);
     const [categorys,setcategorys]= useState([])
      products.forEach(element => {
-        if(!categorys.includes(element.categoy)){
+        if(!categorys.includes(element.categoy) ){
             setcategorys([...categorys,element.categoy])
         }
     });
     console.log(categorys);
+ 
+    let catImages= products.map((e)=>(e.image))
+    // console.log(catImages);
     
     return(
         <>
@@ -21,7 +24,7 @@ function ProductsCategorySection() {
                 {categorys.map((e)=>(
                 <div className='categorySectionDivCard' key={e}>
                     <div>
-                        <img src={testPIC} alt="" />
+                        <img className='CategoryImage' src={catImages} alt="" />
                     </div>
                     <p className='categorySectionDivCardPara1'>{e}</p>
                 </div>
