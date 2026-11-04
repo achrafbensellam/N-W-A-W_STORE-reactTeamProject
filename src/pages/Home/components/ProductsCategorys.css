@@ -1,0 +1,79 @@
+.CtegorySection {
+    background-color: rgb(11, 16, 20);
+    color: white;
+    padding: 4%;
+    border-bottom: 1px solid gray;
+}
+
+.CtegorySectionDIV {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.categorySectionDivCard {
+    text-align: center;
+    background-color: rgb(8, 51, 51);
+    padding: 3%;
+    border-radius: 10px;
+    transition: transform 0.4s ease-in-out;
+}
+.categorySectionDivCard:hover {
+    box-shadow: 1px 1px 10px 1px rgba(0, 255, 255, 0.338);
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+.CategoryPara1{
+    text-align: center;
+    padding: 3%;
+    font-size: 40px;
+    font-weight: 700;
+        font-family: Dancing Script;
+
+}
+.categorySectionDivCardPara1{
+    padding-top: 3%;
+    font-size: 20px;
+}
+.CategoryImage{
+    width: 100%;
+    height: 100%;
+}
+@media (min-width:320px) and (max-width:480px) {
+    .CtegorySection {
+    background-color: rgb(11, 16, 20);
+    color: white;
+    padding: 4%;
+    border-bottom: 1px solid gray;
+}
+
+.CtegorySectionDIV {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.categorySectionDivCard {
+    text-align: center;
+}
+.CategoryPara1{
+    text-align: center;
+    padding: 3%;
+    font-size: 40px;
+    font-weight: 700;
+        font-family: Dancing Script;
+
+}
+.categorySectionDivCardPara1{
+    padding-top: 3%;
+    font-size: 20px;
+}
+.CategoryImage{
+    width: 100%;
+    height: 100%;
+}
+}
