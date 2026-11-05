@@ -28,6 +28,8 @@ function PageHeader() {
                 </div>
                 <nav className='NavBar'>
                     <Link className='headerLinks' to='/'>Home</Link>
+                    {/* <Link className='headerLinks' to='/Productspage'>Products</Link> */}
+                    <Link className='headerLinks' to='/Order'>Order</Link>
                     <Link className='headerLinks' to='/Products'>Products</Link>
                     {/* <Link className='headerLinks' to='/Order'>Order</Link> */}
                 </nav>
