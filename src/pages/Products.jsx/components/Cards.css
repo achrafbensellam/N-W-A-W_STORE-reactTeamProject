@@ -84,6 +84,7 @@
     background:linear-gradient( to top right, black , rgb(11, 71, 67)) ;
     display: flex;
     justify-content: center;
+    padding-bottom: 3vh;
    
 
 }

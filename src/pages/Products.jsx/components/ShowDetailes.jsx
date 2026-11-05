@@ -45,6 +45,16 @@ function Showdetail() {
                     <div className="thedetailsthemselfs">
                         <h1>{X.name}</h1>
                         <p>{X.price} MAD</p>
+                                        {X.discount > 0 && (
+  <div >
+    <p style={{ color: "red", fontWeight: "bold", fontSize: "16px" }}>
+      Discount: {X.discount}% OFF
+    </p>
+    <p style={{ color: "yellow", fontWeight: "bold", fontSize: "18px"}}>
+      New Price: {Number(X.price) - ((Number(X.price) * Number(X.discount)) / 100)}$
+    </p>
+  </div>
+)}
                         <p>{X.category}</p>
                                                         <div className="FaStar"> <FaStar /><FaStar /><FaStar /><FaRegStarHalfStroke /></div>
                         <p>{X.description}</p>
