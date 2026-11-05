@@ -1,16 +1,28 @@
-
-import { useContext } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { MyContext } from '../utils/MyContext';
 import './CartSidebar.css';
 
 function CartSidebar({ isOpen, onClose }) {
 
-    
-    const [products, setProducts, cart, setCart] =
-        useContext(MyContext);
+    const [products, setProducts, cart, setCart] = useContext(MyContext);
 
     const navigate = useNavigate();
+    const [isVisible, setIsVisible] = useState(isOpen);
+    const [animation, setAnimation] = useState('slideIn');
+
+    useEffect(() => {
+        if (isOpen) {
+            setIsVisible(true);
+            setAnimation('slideIn');
+        } else if (isVisible) {
+            setAnimation('slideOut');
+
+            const timer = setTimeout(() => {setIsVisible(false);}, 300);
+            return () => clearTimeout(timer);
+        }
+    }, 
+    [isOpen]);
 
     // !حساب عدد المنتجات
     const cartCount = cart.reduce(
@@ -60,10 +72,11 @@ function CartSidebar({ isOpen, onClose }) {
 
     return (
         <>
-            {isOpen && (
+            {isVisible && (
                 <div className="cart-overlay" onClick={onClose}>
 
-                    <div className="cart-sidebar" onClick={(e) => e.stopPropagation()}>
+                    <div className={`cart-sidebar ${animation}`}
+                        onClick={(e) => e.stopPropagation()}>
                         <div className="sidebar-header">
                             <h2>Shopping Cart ({cartCount})</h2>
 
@@ -75,12 +88,12 @@ function CartSidebar({ isOpen, onClose }) {
                                 <h3>Your cart is empty</h3>
                                 <button onClick={onClose}>Continue Shopping</button>
                             </div>
-                            ) : (
+                        ) : (
                             <>
                                 <div className="sidebar-products">
                                     {cart.map((item) => (
                                         <div className="sidebar-product" key={item.id}>
-                                            <img src={item.image} alt={item.name}/>
+                                            <img src={item.image} alt={item.name} />
                                             <div className="sidebar-product-info">
                                                 <h3>{item.name}</h3>
                                                 <p> ${Number(item.price).toFixed(2)} </p>
@@ -116,7 +129,7 @@ function CartSidebar({ isOpen, onClose }) {
                                     </div>
 
                                     <button className="sidebar-checkout" onClick={goToCheckout}>
-                                     Checkout
+                                    Checkout
                                     </button>
 
                                     <button className="sidebar-continue" onClick={onClose}>
