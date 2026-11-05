@@ -1,6 +1,7 @@
 import { useContext, useState } from 'react';
 import { MyContext } from '../../../utils/MyContext';
 // import testPIC from '../../../assets/img/testPIC.png'
+import { Link } from 'react-router-dom';
 import './ProductsCategorys.css';
 function ProductsCategorySection() {
     const[products] = useContext(MyContext)
@@ -15,6 +16,10 @@ function ProductsCategorySection() {
  
     let catImages= products.map((e)=>(e.image))
     // console.log(catImages);
+    let getCATEGORY = (param)=>{
+        console.log(param);
+        
+    }
     
     return(
         <>
@@ -22,12 +27,12 @@ function ProductsCategorySection() {
             <p className='CategoryPara1'>Categorys</p>
             <div className='CtegorySectionDIV'>
                 {categorys.map((e)=>(
-                <div className='categorySectionDivCard' key={e}>
+                <Link to='/Products' onClick={()=>getCATEGORY(e)} className='categorySectionDivCard' key={e}>
                     <div>
                         <img className='CategoryImage' src={catImages} alt="" />
                     </div>
                     <p className='categorySectionDivCardPara1'>{e}</p>
-                </div>
+                </Link>
 
             ))}
             </div>

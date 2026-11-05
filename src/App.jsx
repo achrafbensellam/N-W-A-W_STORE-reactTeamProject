@@ -23,7 +23,7 @@ function App() {
           <Route path="/cartSidebar" element={<CartSidebar />} />
           <Route path='*' element={<ErrorPage />} />
         </Routes>
-        <Productspage />
+        {/* <Productspage /> */}
         <PageFooter />
       </MyProvider>
     </>

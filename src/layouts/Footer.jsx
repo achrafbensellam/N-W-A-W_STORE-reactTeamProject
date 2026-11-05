@@ -57,7 +57,7 @@ function PageFooter() {
                         <div className='theFooterdiv3Para2'>
                             <p className='theFooterdiv3Para3'>Other</p>
                             <Link className='foterLinks2' to='/'>home</Link>
-                            <Link className='foterLinks2' to='/Product'>products</Link>
+                            <Link className='foterLinks2' to='/Products'>products</Link>
                             <Link className='foterLinks2' to='/Order'>order</Link>
                        
                             
