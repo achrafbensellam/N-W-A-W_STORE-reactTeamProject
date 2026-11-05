@@ -15,7 +15,9 @@ export const MyProvider = ({ children }) => {
     price: 24.99,
     rating: "4.8",
     availability: "In Stock",
-    category: "Tops"
+    category: "Tops",
+    featured:true,
+    discount:10
   },
   { id: crypto.randomUUID(),
     name: "Slim-Fit Stretch Denim Jeans",
@@ -24,7 +26,9 @@ export const MyProvider = ({ children }) => {
     price: 59.99,
     rating: "4.6",
     availability: "In Stock",
-    category: "Bottoms"
+    category: "Bottoms",
+    featured:false,
+    discount:0
   },
   { id: crypto.randomUUID(),
     name: "Minimalist Fleece Pullover Hoodie",
@@ -33,7 +37,9 @@ export const MyProvider = ({ children }) => {
     price: 49.99,
     rating: "4.9",
     availability: "In Stock",
-    category: "Outerwear"
+    category: "Outerwear",
+    featured:false,
+    discount:30
   },
   {
     id:crypto.randomUUID(),
@@ -43,7 +49,9 @@ export const MyProvider = ({ children }) => {
     price: 44.99,
     rating: "4.5",
     availability: "Low Stock",
-    category: "Tops"
+    category: "Tops",
+    featured:false,
+    discount:0
   },
   { id: crypto.randomUUID(),
     name: "Utility Relaxed Cargo Pants",
@@ -52,7 +60,9 @@ export const MyProvider = ({ children }) => {
     price: 54.99,
     rating: "4.7",
     availability: "In Stock",
-    category: "Bottoms"
+    category: "Bottoms",
+    featured:true,
+    discount:0
   },
   { id: crypto.randomUUID(),
     name: "Insulated Urban Bomber Jacket",
@@ -61,7 +71,9 @@ export const MyProvider = ({ children }) => {
     price: 89.99,
     rating: "4.9",
     availability: "In Stock",
-    category: "Outerwear"
+    category: "Outerwear",
+    featured:true,
+    discount:2
   },
   { id: crypto.randomUUID(),
     name: "Tailored Smart Wool-Blend Trousers",
@@ -70,7 +82,9 @@ export const MyProvider = ({ children }) => {
     price: 64.99,
     rating: "4.4",
     availability: "Out of Stock",
-    category: "Bottoms"
+    category: "Bottoms",
+    featured:false,
+    discount:50
   },
   { id: crypto.randomUUID(),
     name: "Casual Linen Long-Sleeve Shirt",
@@ -79,7 +93,9 @@ export const MyProvider = ({ children }) => {
     price: 39.99,
     rating: "4.6",
     availability: "In Stock",
-    category: "Tops"
+    category: "Tops",
+    featured:false,
+    discount:10
   },
   { id: crypto.randomUUID(),
     name: "Classic Denim Trucker Jacket",
@@ -88,7 +104,9 @@ export const MyProvider = ({ children }) => {
     price: 74.99,
     rating: "4.8",
     availability: "In Stock",
-    category: "Outerwear"
+    category: "Outerwear",
+    featured:false,
+    discount:10
   }
 ]);
 const [cart, setCart] = useState([]);

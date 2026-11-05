@@ -7,8 +7,8 @@ function ProductsCategorySection() {
     console.log(products);
     const [categorys,setcategorys]= useState([])
      products.forEach(element => {
-        if(!categorys.includes(element.categoy) ){
-            setcategorys([...categorys,element.categoy])
+        if(!categorys.includes(element.category) ){
+            setcategorys([...categorys,element.category])
         }
     });
     console.log(categorys);
