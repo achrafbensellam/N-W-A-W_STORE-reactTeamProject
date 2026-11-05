@@ -1,10 +1,10 @@
 import { useContext, useState } from 'react';
 import { MyContext } from '../../../utils/MyContext';
-// import testPIC from '../../../assets/img/testPIC.png'
+import testPic from '../../../assets/img/pic1.webp'
 import { Link } from 'react-router-dom';
 import './ProductsCategorys.css';
 function ProductsCategorySection() {
-    const[products] = useContext(MyContext)
+    const[products, setProducts, cart, setCart, nawfalCard, setNawfalCard, search, Setsearch,category, setCategory] = useContext(MyContext)
     console.log(products);
     const [categorys,setcategorys]= useState([])
      products.forEach(element => {
@@ -14,12 +14,12 @@ function ProductsCategorySection() {
     });
     console.log(categorys);
  
-    let catImages= products.map((e)=>(e.image))
-    // console.log(catImages);
-    let getCATEGORY = (param)=>{
-        console.log(param);
+    // let catImages= products.map((e)=>(e.image))
+    // // console.log(catImages);
+    // let getCATEGORY = (param)=>{
+    //     setCategory(param)
         
-    }
+    // }
     
     return(
         <>
@@ -29,7 +29,7 @@ function ProductsCategorySection() {
                 {categorys.map((e)=>(
                 <Link to='/Products' onClick={()=>getCATEGORY(e)} className='categorySectionDivCard' key={e}>
                     <div>
-                        <img className='CategoryImage' src={catImages} alt="" />
+                        <img className='CategoryImage' src={testPic} alt="" />
                     </div>
                     <p className='categorySectionDivCardPara1'>{e}</p>
                 </Link>
