@@ -10,7 +10,7 @@ import { MyProvider } from './utils/MyContext';
 import Showdetail from './pages/Products.jsx/components/ShowDetailes';
 import CartSidebar from './components/CartSidebar';
 import AdminDashbord from './pages/admin/admin';
-import Checkout from './components/checkout';
+import Checkout from './components/Checkout';
 
 
 import Productspage from './pages/Products.jsx/ProductsPage';
