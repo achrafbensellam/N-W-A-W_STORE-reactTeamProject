@@ -2,7 +2,7 @@ import "./formAdmin.css";
 import { useState, } from "react";
 import { FiX } from "react-icons/fi";
 
-function FormAddProduct({ setProducts, setIsModalOpen, productEdit }) {
+function FormAddProduct({ setProducts, setIsModalOpen, productEdit, setNotification }) {
     const [product, setProduct] = useState(() => {
         if (productEdit) {
             return { ...productEdit };
@@ -79,7 +79,11 @@ function FormAddProduct({ setProducts, setIsModalOpen, productEdit }) {
             ]);
 
         }
-
+        setNotification(
+            productEdit
+                ? "Product updated successfully!"
+                : "Product added successfully!"
+        );
         setIsModalOpen(false);
     }
 

@@ -10,7 +10,7 @@ import { MyContext } from '../utils/MyContext';
 import CartSidebar from '../components/CartSidebar';
 function PageHeader() {
     const [isCartOpen, setIsCartOpen] = useState(false);
-    const [products, setProducts, cart, setCart] = useContext(MyContext);
+    const [products, setProducts, cart, setCart, nawfalCard, setNawfalCard,search, Setsearch] = useContext(MyContext);
     const [burger, setBurger] = useState(false);
     const burgerState = () => {
         if (burger === false) {
@@ -20,18 +20,18 @@ function PageHeader() {
         }
     }
     // ! search bar:
-    const [searchBar,setSearchBar] = useState('');
+    // const [searchBar,setSearchBar] = useState('');
+        // const [search, Setsearch] = useState('');
     let getSearchBar = (e)=>{
-        setSearchBar(e.target.value)
+        Setsearch(e.target.value)
        
     }
     const searchedItem = products.filter((e)=>
-    e.name.toLowerCase().includes(searchBar.toLowerCase())
+    e.name.toLowerCase().includes(search.toLowerCase())
     )
     console.log(searchedItem);
-    let test = (param)=>{
-        console.log(param);
-        
+    let moveToProductsCARD = (param)=>{
+        Setsearch(param)
     }
 
     return (
@@ -54,7 +54,7 @@ function PageHeader() {
                 </nav>
                 <div className='searchCartDiv'>
                     <div>
-                        <input onChange={getSearchBar} value={searchBar} className='headerSearchInput' type="text" />
+                        <input onChange={getSearchBar} value={search} className='headerSearchInput' placeholder='Search Now' type="text" />
                     </div>
                     <div className='HeaderCartIconDiv'>
 
@@ -66,9 +66,9 @@ function PageHeader() {
                         </p>
                     </div>
                 </div>
-                <div className={searchBar === ''?'SearchDiv2':'SearchDiv'}>
+                <div className={search === ''?'SearchDiv2':'SearchDiv'}>
                     {searchedItem.map((e)=>(
-                        <p onClick={()=>test(e.name)} key={e.id} className='searchedelement'>{e.name}</p>
+                        <Link to='/Products' onClick={()=>moveToProductsCARD(e.name)} key={e.id} className='searchedelement'>{e.name}</Link>
                     ))}
                 </div>
             </header>

@@ -114,11 +114,21 @@
 .form-header {
     flex-shrink: 0;
 }
-
+.form-body::-webkit-scrollbar {
+    display: none;
+}
 .form-body {
     flex: 1;
     min-height: 0;
     overflow-y: auto;
+}
+
+.form input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #5359af;
+    cursor: pointer;
+    vertical-align: middle;
 }
 
 @media (max-width: 768px) {

@@ -13,17 +13,18 @@ import Slider from "@mui/material/Slider";
 function Showdetails() {
   const [Priceslct, setPriceslct] = useState("all");
 
-  const [category, setCategory] = useState("all");
-  const [search, Setsearch] = useState("");
-  const [products, setProducts, cart, setCart] = useContext(MyContext);
-
-  const [selectedCard, setSelectedCard] = useState(null);
-  // the checked btns
-  const [isChecked1, setIschecked1] = useState(false);
-  const [isChecked2, setIschecked2] = useState(false);
-  const [isChecked3, setIschecked3] = useState(false);
-  //the last checked btns
-  // const [selectedCard,setSelectedCard] = useState(null);
+    // !!!!!!! achraf changes here
+    // const [category, setCategory] = useState("all")
+    // const [search, Setsearch] = useState('');
+    const [products, setProducts, cart, setCart, nawfalCard, setNawfalCard, search, Setsearch,category, setCategory] = useContext(MyContext);
+    // !!!!!!! achraf changes hers
+    const [selectedCard, setSelectedCard] = useState(null);
+    // the checked btns
+    const [isChecked1, setIschecked1] = useState(false);
+    const [isChecked2, setIschecked2] = useState(false);
+    const [isChecked3, setIschecked3] = useState(false);
+    //the last checked btns
+    // const [selectedCard,setSelectedCard] = useState(null);
 
   const [value, setValue] = useState([800, 8800]);
 

@@ -17,6 +17,8 @@ export const MyProvider = ({ children }) => {
     rating: "4.8",
     availability: "In Stock",
     category: "Tops",
+     featured: true,
+      discount: 0,
     image2:"https://assets.hermes.com/is/image/hermesproduct/665400H811_worn_102?wid=640&hei=853&fit=fit,1&$product_default_bg$",
     image3:"https://assets.hermes.com/is/image/hermesproduct/667805HZ26_worn_101?wid=1536&hei=2048&qlt=99&$product_default_bg$",
     image4:"https://assets.hermes.com/is/image/hermesproduct/667805HZ26_front_wm_104?wid=1536&hei=2048&qlt=99&$product_default_bg$"
@@ -30,6 +32,8 @@ export const MyProvider = ({ children }) => {
     rating: "4.6",
     availability: "In Stock",
     category: "Bottoms",
+     featured: false,
+      discount: 10,
       image2:"https://assets.hermes.com/is/image/hermesproduct/667035HA3X_worn_103?wid=640&hei=853&fit=fit,1&$product_default_bg$",
     image3:"https://assets.hermes.com/is/image/hermesproduct/667035HA3X_worn_102?wid=750&hei=1000&fit=fit,1&$product_default_bg$",
     image4:"https://assets.hermes.com/is/image/hermesproduct/667035HA3X_worn_101?wid=750&hei=1000&fit=fit,1&$product_default_bg$"
@@ -44,6 +48,8 @@ export const MyProvider = ({ children }) => {
     rating: "4.9",
     availability: "In Stock",
     category: "Outerwear",
+     featured: false,
+      discount: 0,
       image2:"https://assets.hermes.com/is/image/hermesproduct/667770HA87_worn_104?wid=1536&hei=2048&qlt=99&$product_default_bg$",
     image3:"https://assets.hermes.com/is/image/hermesproduct/667770HA87_worn_103?wid=1536&hei=2048&qlt=99&$product_default_bg$",
     image4:"https://assets.hermes.com/is/image/hermesproduct/667770HA87_worn_105?wid=1536&hei=2048&qlt=99&$product_default_bg$"
@@ -58,6 +64,8 @@ export const MyProvider = ({ children }) => {
     rating: "4.5",
     availability: "Low Stock",
     category: "Tops",
+     featured: false,
+      discount: 20,
           image2:"https://assets.hermes.com/is/image/hermesproduct/662210HD01_worn_101?wid=828&hei=1104&fit=fit,1&$product_default_bg$",
     image3:"https://assets.hermes.com/is/image/hermesproduct/662210HD01_worn_105?wid=1536&hei=2048&qlt=99&$product_default_bg$",
     image4:"https://assets.hermes.com/is/image/hermesproduct/662210HD01_worn_107?wid=1536&hei=2048&qlt=99&$product_default_bg$"
@@ -72,6 +80,8 @@ export const MyProvider = ({ children }) => {
     rating: "4.7",
     availability: "In Stock",
     category: "Bottoms",
+     featured: true,
+      discount: 0,
       image2:"https://assets.hermes.com/is/image/hermesproduct/665400H811_worn_102?wid=640&hei=853&fit=fit,1&$product_default_bg$",
     image3:"https://assets.hermes.com/is/image/hermesproduct/665400H811_worn_103?wid=640&hei=853&fit=fit,1&$product_default_bg$",
     image4:"https://assets.hermes.com/is/image/hermesproduct/665400H811_worn_101?wid=828&hei=1104&fit=fit,1&$product_default_bg$"
@@ -85,6 +95,8 @@ export const MyProvider = ({ children }) => {
     rating: "4.9",
     availability: "In Stock",
     category: "Outerwear",
+     featured: true,
+      discount: 50,
       image2:"https://assets.hermes.com/is/image/hermesproduct/662060HB02_worn_106?wid=640&hei=853&fit=fit,1&$product_default_bg$",
     image3:"https://assets.hermes.com/is/image/hermesproduct/662060HB02_worn_107?wid=1536&hei=2048&qlt=99&$product_default_bg$",
     image4:"https://assets.hermes.com/is/image/hermesproduct/662060HB02_worn_103?wid=1536&hei=2048&qlt=99&$product_default_bg$"
@@ -98,6 +110,8 @@ export const MyProvider = ({ children }) => {
     rating: "4.4",
     availability: "Out of Stock",
     category: "Bottoms",
+     featured: false,
+      discount: 0,
       image2:"https://assets.hermes.com/is/image/hermesproduct/662500HG73_worn_105?wid=640&hei=853&fit=fit,1&$product_default_bg$",
     image3:"https://assets.hermes.com/is/image/hermesproduct/662500HG73_worn_104?wid=640&hei=853&fit=fit,1&$product_default_bg$",
     image4:"https://assets.hermes.com/is/image/hermesproduct/662500HG73_worn_107?wid=640&hei=853&fit=fit,1&$product_default_bg$"
@@ -111,6 +125,8 @@ export const MyProvider = ({ children }) => {
     rating: "4.6",
     availability: "In Stock",
     category: "Tops",
+     featured: false,
+      discount: 70,
           image2:"https://assets.hermes.com/is/image/hermesproduct/666180H673_worn_103?wid=640&hei=853&fit=fit,1&$product_default_bg$",
     image3:"https://assets.hermes.com/is/image/hermesproduct/666180H673_worn_106?wid=640&hei=853&fit=fit,1&$product_default_bg$",
     image4:"https://assets.hermes.com/is/image/hermesproduct/666180H673_worn_104?wid=640&hei=853&fit=fit,1&$product_default_bg$"
@@ -124,14 +140,20 @@ export const MyProvider = ({ children }) => {
     rating: "4.8",
     availability: "In Stock",
     category: "Outerwear",
+     featured: false,
+      discount: 0,
       image2:"https://assets.hermes.com/is/image/hermesproduct/667725HA02_worn_102?wid=750&hei=1000&fit=fit,1&$product_default_bg$",
     image3:"https://assets.hermes.com/is/image/hermesproduct/667725HA02_worn_103?wid=640&hei=853&fit=fit,1&$product_default_bg$",
     image4:"https://assets.hermes.com/is/image/hermesproduct/667725HA02_worn_104?wid=640&hei=853&fit=fit,1&$product_default_bg$"
   }
 ]);
-const [cart, setCart] = useState([]);
+
+ const [cart, setCart] = useState([]);
+  const [nawfalCard, setNawfalCard] = useState('')
+  const [search, Setsearch] = useState('');
+  const [category, setCategory] = useState("all")
     return (
-        <MyContext.Provider value={[products, setProducts, cart, setCart,]}>
+        <MyContext.Provider value={[products, setProducts, cart, setCart, nawfalCard, setNawfalCard, search, Setsearch, category, setCategory]}>
             {children}
         </MyContext.Provider>
     );
