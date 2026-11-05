@@ -9,7 +9,7 @@ function Checkout() {
     const [products, setProducts, cart, setCart] = useContext(MyContext);
     const navigate = useNavigate();
 
-    // معلومات الزبون
+    // !معلومات الزبون
     const [formData, setFormData] = useState({
         fullName: '',
         email: '',
@@ -100,7 +100,7 @@ function Checkout() {
 
     return (
         <main className="checkout-page">
-            
+
             <div className="checkout-container">
                 <div className="checkout-heading">
                     <h1>Checkout</h1>
