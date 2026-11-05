@@ -9,7 +9,13 @@ import ErrorPage from './pages/Error/Error';
 import { MyProvider } from './utils/MyContext';
 import Showdetail from './pages/Products.jsx/components/ShowDetailes';
 import CartSidebar from './components/CartSidebar';
+<<<<<<< HEAD
 import AdminDashbord from './pages/admin/admin';
+=======
+import Checkout from './components/checkout';
+import './App.css';
+
+>>>>>>> main
 import Productspage from './pages/Products.jsx/ProductsPage';
 
 function App() {
@@ -23,6 +29,7 @@ function App() {
            <Route path='/products' element={<Productspage/>}/>
            <Route path='/Products/:id' element={<Showdetail/>}/>
           <Route path="/cartSidebar" element={<CartSidebar />} />
+          <Route path="/checkout" element={<Checkout />} />
           <Route path='*' element={<ErrorPage />} />
           <Route path='/admin' element={<AdminDashbord />} />
         </Routes>

@@ -43,15 +43,14 @@ function PageHeader() {
                 <nav className='NavBar'>
                     <Link className='headerLinks' to='/'>Home</Link>
                     {/* <Link className='headerLinks' to='/Productspage'>Products</Link> */}
-                    <Link className='headerLinks' to='/Order'>Order</Link>
                     <Link className='headerLinks' to='/Products'>Products</Link>
-                    {/* <Link className='headerLinks' to='/Order'>Order</Link> */}
+                    <Link className='headerLinks' to='/checkout'>Checkout</Link>
                 </nav>
                 <FontAwesomeIcon onClick={burgerState} className='berguMenu' icon={faBars} />
                 <nav className={burger ? 'NavBar3' : 'NavBar2'}>
                     <Link className={burger ? 'headerLinks3' : 'headerLinks2'} to='/'>Home</Link>
                     <Link className={burger ? 'headerLinks3' : 'headerLinks2'} to='/Products'>Products</Link>
-                    <Link className={burger ? 'headerLinks3' : 'headerLinks2'} to='/Order'>Order</Link>
+                    <Link className={burger ? 'headerLinks3' : 'headerLinks2'} to='/checkout'>Checkout</Link>
                 </nav>
                 <div className='searchCartDiv'>
                     <div>
