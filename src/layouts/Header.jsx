@@ -29,7 +29,7 @@ function PageHeader() {
                 <nav className='NavBar'>
                     <Link className='headerLinks' to='/'>Home</Link>
                     <Link className='headerLinks' to='/Products'>Products</Link>
-                    {/* <Link className='headerLinks' to='/Order'>Order</Link> */}
+                    <Link className='headerLinks' to='/checkout'>Checkout</Link>
                 </nav>
                 <FontAwesomeIcon onClick={burgerState} className='berguMenu' icon={faBars} />
                 <nav className={burger ? 'NavBar3' : 'NavBar2'}>
