@@ -131,8 +131,9 @@ export const MyProvider = ({ children }) => {
   }
 ]);
 const [cart, setCart] = useState([]);
+const[nawfalCard,setNawfalCard] = useState('')
     return (
-        <MyContext.Provider value={[products, setProducts, cart, setCart,]}>
+        <MyContext.Provider value={[products, setProducts, cart, setCart,nawfalCard,setNawfalCard]}>
             {children}
         </MyContext.Provider>
     );
