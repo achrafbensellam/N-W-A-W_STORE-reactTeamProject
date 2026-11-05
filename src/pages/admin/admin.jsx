@@ -1,16 +1,16 @@
 import "./admin.css";
 import CardAdmin from "./components/cardDetailsProduct";
 import FormAddProduct from "./components/formAdmin";
-import { useContext, useState } from "react";
+import { useContext, useState, useEffect } from "react";
 import { MyContext } from "../../utils/MyContext";
 import Aside from "./components/aside";
 
 function AdminDashbord() {
     const [isModalOpen, setIsModalOpen] = useState(false);
-
     const [selectedCategory, setSelectedCategory] = useState("");
     const [products, setProducts] = useContext(MyContext);
     const [productToEdit, setProductToEdit] = useState(null);
+    const [notification, setNotification] = useState(null);
 
     const filterProducts = products.filter((product) => {
         return selectedCategory === "" ||
@@ -24,12 +24,25 @@ function AdminDashbord() {
         setIsModalOpen(true)
     }
 
+    useEffect(() => {
+        if (!notification) return;
 
+        const timer = setTimeout(() => {
+            setNotification(null);
+        }, 3000);
+
+        return () => clearTimeout(timer);
+    }, [notification]);
 
     return (
 
         <main className="page-admin">
 
+            {notification && (
+                <div className="toast-success">
+                    {notification}
+                </div>
+            )}
             <Aside />
 
             <section className="section-products" >
@@ -101,7 +114,10 @@ function AdminDashbord() {
 
                             setProducts={setProducts}
                             setIsModalOpen={setIsModalOpen}
-                            productEdit={productToEdit} />
+                            productEdit={productToEdit}
+                            setNotification={setNotification}
+                        />
+
                     </div>
                 )}
             </div>
