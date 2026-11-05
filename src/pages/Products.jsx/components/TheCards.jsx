@@ -11,10 +11,11 @@ import { Link } from "react-router-dom";
 import Slider from '@mui/material/Slider';
 function Showdetails() {
 
-    const [category, setCategory] = useState("all")
-    const [search, Setsearch] = useState('');
-    const [products, setProducts, cart, setCart,nawfalCard,setNawfalCard] = useContext(MyContext);
-
+    // !!!!!!! achraf changes here
+    // const [category, setCategory] = useState("all")
+    // const [search, Setsearch] = useState('');
+    const [products, setProducts, cart, setCart, nawfalCard, setNawfalCard, search, Setsearch,category, setCategory] = useContext(MyContext);
+    // !!!!!!! achraf changes hers
     const [selectedCard, setSelectedCard] = useState(null);
     // the checked btns
     const [isChecked1, setIschecked1] = useState(false);

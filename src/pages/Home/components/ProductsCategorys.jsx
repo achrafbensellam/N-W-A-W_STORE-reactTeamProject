@@ -4,7 +4,7 @@ import { MyContext } from '../../../utils/MyContext';
 import { Link } from 'react-router-dom';
 import './ProductsCategorys.css';
 function ProductsCategorySection() {
-    const[products] = useContext(MyContext)
+    const[products, setProducts, cart, setCart, nawfalCard, setNawfalCard, search, Setsearch,category, setCategory] = useContext(MyContext)
     console.log(products);
     const [categorys,setcategorys]= useState([])
      products.forEach(element => {
@@ -17,7 +17,7 @@ function ProductsCategorySection() {
     let catImages= products.map((e)=>(e.image))
     // console.log(catImages);
     let getCATEGORY = (param)=>{
-        console.log(param);
+        setCategory(param)
         
     }
     
