@@ -7,14 +7,10 @@ import './Home.css';
 function HomePage() {
 return (
         <>
-<<<<<<< HEAD
-
-=======
         <HeroSection/>
         <ProductsCategorySection/>
         <FeaturedProductsCards/>
         <SpecialOffer/>
->>>>>>> main
         </>
     )
 }

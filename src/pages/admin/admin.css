@@ -15,20 +15,21 @@
     padding: 20px 20px 0px 20px;
 
 }
-.box-head-section{
+
+.box-head-section {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.box-btn-add{
+
+.box-btn-add {
     width: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
-button{
 
 }
-}
+
 .box-btn-add button {
     background-color: rgb(83, 89, 175);
     color: rgb(200, 203, 203);
@@ -135,7 +136,7 @@ button{
     border: 1px solid rgb(52, 79, 86);
     border-radius: 5px;
     padding: 10px 16px;
-    
+
     cursor: pointer;
     outline: none;
     font-size: 14px;
@@ -152,16 +153,134 @@ button{
 }
 
 
-/* modal */
 .modal-overlay {
     position: fixed;
     inset: 0;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 1000;
+
+}
+
+@media (max-width: 768px) {
+
+    .page-admin {
+        grid-template-columns: 60px minmax(0, 1fr);
+    }
+
+    .section-products {
+        min-width: 0;
+        padding: 15px 10px 0;
+    }
+
+    .box-head-section {
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+
+    .box-filters {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 15px 10px;
+    }
+
+    .box-products {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .head-box-products {
+        display: none;
+    }
+
+    .box-products-cards {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .card-product {
+        grid-template-columns: 90px minmax(0, 1fr);
+        gap: 12px;
+        padding: 15px 10px;
+    }
+
+    .box-info {
+        grid-template-columns: minmax(0, 1fr);
+        justify-items: start;
+        gap: 10px;
+    }
+
+    .box-buttons-product {
+        grid-column: 1 / -1;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .page-admin {
+        grid-template-columns: 50px minmax(0, 1fr);
+    }
+
+    .section-products {
+        padding: 10px 5px 0;
+    }
+
+    .box-head-section {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .box-btn-add {
+        width: 100%;
+    }
+
+    .box-filters {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .box-filters button,
+    .box-filters select {
+        width: 100%;
+    }
+
+    .card-product {
+        grid-template-columns: 65px minmax(0, 1fr);
+        gap: 8px;
+        padding: 15px 8px;
+    }
+
+    .box-image-product img {
+        width: 55px;
+        height: 65px;
+    }
+
+    .box-info {
+        grid-template-columns: minmax(0, 1fr);
+        justify-items: start;
+        gap: 12px;
+    }
+
+    .box-info span {
+        font-size: 12px;
+        overflow-wrap: anywhere;
+    }
+
+    .box-buttons-product {
+        grid-column: span 2;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .box-buttons-product button {
+        width: 100px;
+    }
 }

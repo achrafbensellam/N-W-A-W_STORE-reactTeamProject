@@ -40,7 +40,6 @@
     align-items: center;
     justify-items: center;
     gap: 5px;
-
     width: 100%;
 }
 
@@ -95,16 +94,79 @@
     background-color: #fa0707;
 }
 
-@media (max-width: 900px) {
+
+@media (max-width: 768px) {
     .card-product {
-        grid-template-columns: 100px minmax(0, 1fr) 150px;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 15px;
+        padding: 20px 10px;
+    }
+
+    .box-image-product {
+        grid-column: 1 / -1;
+    }
+
+    .box-image-product img {
+        width: 90px;
+        height: 100px;
     }
 
     .box-info {
-        grid-template-columns: repeat(4, minmax(0, 1fr));
+        grid-column: 1 / -1;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 12px;
+        justify-items: center;
+    }
+
+    .box-info div {
+        width: 100%;
+        text-align: center;
+    }
+
+    .box-info span {
+        font-size: 14px;
     }
 
     .box-buttons-product {
-        flex-direction: column;
+        grid-column: span 2;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 12px;
+        margin-top: 5px;
+    }
+
+    .box-buttons-product button {
+        width: 100px;
+        height: 36px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-product {
+        padding: 15px 8px;
+        gap: 12px;
+    }
+
+    .box-image-product img {
+        width: 75px;
+        height: 85px;
+    }
+
+    .box-info {
+        gap: 10px;
+    }
+
+    .box-info span {
+        font-size: 13px;
+        overflow-wrap: anywhere;
+    }
+
+    .box-buttons-product button {
+        width: 90px;
+        height: 34px;
+        font-size: 12px;
     }
 }

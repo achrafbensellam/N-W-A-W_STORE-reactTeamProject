@@ -25,5 +25,18 @@
 
 button:focus .icoun-dashbord {
     color: #466fc7;
-    
+
 }
+
+@media (max-width: 768px) {
+      .page-admin {
+        grid-template-columns: 1fr;
+    }
+
+    .box-aside-icoun {
+        display:none;
+    
+    }
+
+}
+
