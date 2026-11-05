@@ -2,10 +2,10 @@ import React, { createContext, useState } from 'react';
 export const MyContext = createContext();
 
 export const MyProvider = ({ children }) => {
-    // const [users, setUsers] = useState([{
-    //     name: "Default User",
-    //     products: []
-    // }]);
+  // const [users, setUsers] = useState([{
+  //     name: "Default User",
+  //     products: []
+  // }]);
 
     const [products, setProducts] = useState([
   { id: crypto.randomUUID(),

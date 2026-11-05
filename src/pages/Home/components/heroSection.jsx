@@ -1,5 +1,6 @@
 import './heroSection.css'
-function HeroSection() {
+import { Link } from 'react-router-dom';
+function HeroSection() { 
     return (
         <>
             <section className='HeroSection'>
@@ -7,7 +8,7 @@ function HeroSection() {
                 <p className='herosectionPara1'>ELEGANCE IN EVERY DETAIL</p>
                 <p className='herosectionPara3'>Discover timeless styles and premium tailoring
                     designed for the modern wardrobe.</p>
-                <button className='herosectionBTN'>EXPLORE COLLECTION</button>
+                <Link to= '/Products' className='herosectionBTN'>EXPLORE COLLECTION</Link>
             </section>
         </>
     )

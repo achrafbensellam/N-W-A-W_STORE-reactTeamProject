@@ -1,6 +1,5 @@
 /** ============================ start besmillah ================================*/
 import './App.css';
-import { Link } from 'react-router-dom';
 import { Route, Routes } from 'react-router-dom';
 import HomePage from './pages/Home/Home';
 import PageHeader from './layouts/Header';
@@ -10,7 +9,9 @@ import ErrorPage from './pages/Error/Error';
 import { MyProvider } from './utils/MyContext';
 import Showdetail from './pages/Products.jsx/components/ShowDetailes';
 import CartSidebar from './components/CartSidebar';
-import './App.css';
+import AdminDashbord from './pages/admin/admin';
+import Checkout from './components/checkout';
+
 
 import Productspage from './pages/Products.jsx/ProductsPage';
 
@@ -25,7 +26,9 @@ function App() {
            <Route path='/products' element={<Productspage/>}/>
            <Route path='/Products/:id' element={<Showdetail/>}/>
           <Route path="/cartSidebar" element={<CartSidebar />} />
+          <Route path="/checkout" element={<Checkout />} />
           <Route path='*' element={<ErrorPage />} />
+          <Route path='/admin' element={<AdminDashbord />} />
         </Routes>
         
         <PageFooter />

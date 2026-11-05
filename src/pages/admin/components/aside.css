@@ -1,0 +1,42 @@
+.box-aside-icoun {
+    min-height: 100vh;
+    background-color: rgb(21, 34, 42);
+    display: flex;
+    justify-content: center;
+
+}
+
+.btn-icoun-dashbord {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    height: 150px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.icoun-dashbord {
+    font-size: 50px;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+button:focus .icoun-dashbord {
+    color: #466fc7;
+
+}
+
+@media (max-width: 768px) {
+      .page-admin {
+        grid-template-columns: 1fr;
+    }
+
+    .box-aside-icoun {
+        display:none;
+    
+    }
+
+}
+
