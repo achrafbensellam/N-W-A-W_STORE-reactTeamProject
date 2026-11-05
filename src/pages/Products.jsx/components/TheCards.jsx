@@ -209,7 +209,7 @@ function Showdetails() {
                   <FaRegStarHalfStroke />
                 </div>
                 <h2>Price : {item.price}$</h2>
-                {item.discount > 0 && (
+                
   <div >
     <p style={{ color: "red", fontWeight: "bold", fontSize: "16px" }}>
       Discount: {item.discount}% OFF
@@ -218,7 +218,7 @@ function Showdetails() {
     get it now {Number(item.price) - ((Number(item.price) * Number(item.discount)) / 100)}$ 
     </p>
   </div>
-)}
+
                 <h2>category : {item.category}</h2>
 
                 {/* this is the ADD BUTTON */}
