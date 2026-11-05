@@ -60,7 +60,7 @@
 
 .sidebar-header h2 {
     font-size: 1.3rem;
-    color: #222222;
+    color: rgb(188, 131, 38);
     margin: 0;
 }
 
@@ -173,6 +173,7 @@
     cursor: pointer;
     padding: 0;
     font-size: 0.85rem;
+    font-weight: 600;
 }
 
 .sidebar-remove:hover {
@@ -196,6 +197,7 @@
     color: #c0392b;
     cursor: pointer;
     font-size: 0.9rem;
+    font-weight: 600;
 }
 
 /* Total */
@@ -221,7 +223,7 @@
 }
 
 .sidebar-checkout:hover {
-    background: #444444;
+    background: rgb(23, 105, 107);
 }
 
 /* Continue Shopping */
@@ -230,10 +232,11 @@
     margin-top: 0.8rem;
     padding: 0.8rem;
     background: white;
-    color: #222222;
+    color: rgb(188, 131, 38);
     border: 1px solid #dddddd;
     border-radius: 0.3rem;
     cursor: pointer;
+    font-weight: 600;
 }
 
 .sidebar-continue:hover {
